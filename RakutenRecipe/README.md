@@ -7,12 +7,12 @@
 
 # Endpoints
 
-## [Recipe/CategoryRanking](/RecipeCategoryRanking)
+## [Recipe/CategoryRanking](RecipeCategoryRanking)
 Gets the top 4 ranked recipes.
 * **Auth Type** App Key
 * **Affiliation Support** No
 
-## [Recipe/CategoryList](/RecipeCategoryList)
+## [Recipe/CategoryList](RecipeCategoryList)
 Gets the full recipe category list.
 * **Auth Type** App Key
 * **Affiliation Support** No

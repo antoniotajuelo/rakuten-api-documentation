@@ -7,17 +7,17 @@
 
 # Endpoints
 
-## [FavoriteBookmark/List](/FavoriteBookmarkList)
+## [FavoriteBookmark/List](FavoriteBookmarkList)
 Gets up to 40 favorite bookmarks from the user performing the API call.
 * **Auth Type** OAuth
 * **Affiliation Support** Yes
 
-## [FavoriteBookmark/Add](/FavoriteBookmarkAdd)
+## [FavoriteBookmark/Add](FavoriteBookmarkAdd)
 Adds an item to the favorite bookmarks of the user performing the API call.
 * **Auth Type** OAuth
 * **Affiliation Support** No
 
-## [FavoriteBookmark/Delete](/FavoriteBookmarkDelete)
+## [FavoriteBookmark/Delete](FavoriteBookmarkDelete)
 Deletes a favorite bookmark from the user performing the API call.
 * **Auth Type** OAuth
 * **Affiliation Support** No

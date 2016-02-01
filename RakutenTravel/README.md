@@ -7,37 +7,37 @@
 
 # Endpoints
 
-## [Travel/SimpleHotelSearch](/TravelSimpleHotelSearch)
+## [Travel/SimpleHotelSearch](TravelSimpleHotelSearch)
 Gets up to 30 hotels by area class code, hotel number or coordinates.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [Travel/HotelDetailSeach](/TravelHotelDetailSeach)
+## [Travel/HotelDetailSeach](TravelHotelDetailSeach)
 Gets a hotel details by hotel number.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [Travel/VacantHotelSearch](/TravelVacantHotelSearch)
+## [Travel/VacantHotelSearch](TravelVacantHotelSearch)
 Gets up to 30 vacant hotels for a specified checkin and checkout dates by area class code, hotel number or coordinates.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [Travel/HotelRanking](/TravelHotelRanking)
+## [Travel/HotelRanking](TravelHotelRanking)
 Gets the top 10 hotels by hotel genre.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [Travel/GetHotelChainList](/TravelGetHotelChainList)
+## [Travel/GetHotelChainList](TravelGetHotelChainList)
 Gets the full hotel chain list.
 * **Auth Type** App Key
 * **Affiliation Support** No
 
-## [Travel/GetAreaClass](/TravelGetAreaClass)
+## [Travel/GetAreaClass](TravelGetAreaClass)
 Gets the full area class list.
 * **Auth Type** App Key
 * **Affiliation Support** No
 
-## [Travel/KeywordHotelSearch](/TravelKeywordHotelSearch)
+## [Travel/KeywordHotelSearch](TravelKeywordHotelSearch)
 Gets up to 30 hotels by keyword.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
