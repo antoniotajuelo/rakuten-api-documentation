@@ -7,17 +7,17 @@
 
 # Endpoints
 
-## [Gora/GoraGolfCourseSearch](RakutenGORA/GoraGoraGolfCourseSearch)
+## [Gora/GoraGolfCourseSearch](/GoraGoraGolfCourseSearch)
 Gets up to 30 golf courses.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [Gora/GoraGolfCourseDetail](RakutenGORA/GoraGoraGolfCourseDetail)
+## [Gora/GoraGolfCourseDetail](/GoraGoraGolfCourseDetail)
 Gets a golf course details by a golf course id.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [Gora/GoraPlanSearch](RakutenGORA/GoraGoraPlanSearch)
+## [Gora/GoraPlanSearch](/GoraGoraPlanSearch)
 Gets up to 30 golf courses by a date.
 * **Auth Type** App Key
 * **Affiliation Support** Yes

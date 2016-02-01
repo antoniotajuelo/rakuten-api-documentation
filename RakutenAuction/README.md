@@ -7,22 +7,22 @@
 
 # Endpoints
 
-## [AuctionGenreId/Search](RakutenAuction/AuctionGenreIdSearch)
+## [AuctionGenreId/Search](/AuctionGenreIdSearch)
 Gets an auction genre's attributes, children genres and ancestor genres by auction genre id.
 * **Auth Type** App Key
 * **Affiliation Support** No
 
-## [AuctionGenreKeyword/Search](RakutenAuction/AuctionGenreKeywordSearch)
+## [AuctionGenreKeyword/Search](/AuctionGenreKeywordSearch)
 Gets up to 10 auction genres by keyword.
 * **Auth Type** App Key
 * **Affiliation Support** No
 
-## [AuctionItem/Search](RakutenAuction/AuctionItemSearch)
+## [AuctionItem/Search](/AuctionItemSearch)
 Gets up to 30 auction items by keyword or auction genre id.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [AuctionItemCode/Search](RakutenAuction/AuctionItemCodeSearch)
+## [AuctionItemCode/Search](/AuctionItemCodeSearch)
 Gets an auction item by auction item code.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
