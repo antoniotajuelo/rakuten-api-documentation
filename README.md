@@ -6,62 +6,62 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Ichiba](RakutenIchiba)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png]]](/RakutenIchiba)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png)](/RakutenIchiba)
 * **Name** Rakuten Ichiba
 * **URL** http://www.rakuten.co.jp/
 * **Description** Rakuten's e-commerce platform.
 
 ### [Rakuten Books](RakutenBooks)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png]]](/RakutenBooks)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png)](/RakutenBooks)
 * **Name** Rakuten Books
 * **URL** http://books.rakuten.co.jp/
 * **Description** Rakuten's shop for media products like books, magazines, videogames, DVDs, Blu-ray and software.
 
 ### [Rakuten Bookmark](RakutenBookmark)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png]]](/RakutenBookmark)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png)](/RakutenBookmark)
 * **Name** Rakuten Bookmark
 * **URL** http://my.bookmark.rakuten.co.jp/
 * **Description** Rakuten's service for allowing users to make list of their favorite items.
 
 ### [Rakuten Travel](RakutenTravel)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-travel.png]]](/RakutenTravel)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-travel.png)](/RakutenTravel)
 * **Name** Rakuten Travel
 * **URL** http://travel.rakuten.co.jp/
 * **Description** Rakuten's travel reservation website.
 
 ### [Rakuten Auction](RakutenAuction)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-auctions.png]]](/RakutenAuction)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-auctions.png)](/RakutenAuction)
 * **Name** Rakuten Auction
 * **URL** http://auction.rakuten.co.jp/
 * **Description** Rakuten's auction website.
 
 ### [Rakuten Kobo](RakutenKobo)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/kobo.png]]](/RakutenKobo)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/kobo.png)](/RakutenKobo)
 * **Name** Rakuten Kobo
 * **URL** https://www.kobo.com/
 * **Description** Rakuten's e-book reader and bookstore.
 
 ### [Rakuten GORA](RakutenGORA)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-gora.png]]](/RakutenGORA)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-gora.png)](/RakutenGORA)
 * **Name** Rakuten GORA
 * **URL** http://gora.golf.rakuten.co.jp/
 * **Description** Rakuten's online golf reservation site.
 
 ### [Rakuten Recipe](RakutenRecipe)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-recipes.png]]](/RakutenRecipe)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-recipes.png)](/RakutenRecipe)
 * **Name** Rakuten Recipe
 * **URL** http://recipe.rakuten.co.jp/
 * **Description** Rakuten Recipe is a community for sharing cooking recipes.
 
 ### [Other](Other)
 
-[[[https://media.antoniotajuelo.com/rakuten/service/logo/rakuten.png]]](/Other)
+[(https://media.antoniotajuelo.com/rakuten/service/logo/rakuten.png)](/Other)
 * **Name** Other
 * **Description** Other APIs offered by Rakuten that do not belong to a specific service.
