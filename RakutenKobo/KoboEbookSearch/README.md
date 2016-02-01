@@ -17,47 +17,26 @@ https://app.rakuten.co.jp/services/api/Kobo/EbookSearch/20140811
 Name | Type | Required | Description
  --- | --- | --- | --- 
 applicationId<br>*App ID* | string | Required | The Application ID that identifies your application. You can get it from <a href="https://webservice.rakuten.co.jp/" target="_blank">https://webservice.rakuten.co.jp/</a>.
-
 keyword<br>*Keyword* | string | At least one is required | Search for keyword.<br>UTF-8 encoded string.<br>If you want to search from multiple keyword they must be separated by a space.
-
 title<br>*Book title* | string | At least one is required | Search for book title.<br>UTF-8 encoded string.<br>If you want to search from multiple keyword they must be separated by a space.
-
 author<br>*Author's name* | string | At least one is required | Search for author's name.<br>UTF-8 encoded string.<br>If you want to search from multiple keyword they must be separated by a space.
-
 publisherName<br>*Publisher* | string | At least one is required | Search for publisher's name.<br>UTF-8 encoded string.<br>If you want to search from multiple keyword they must be separated by a space.
-
 itemNumber<br>*Item Number* | string | At least one is required | Search for item number.
-
-koboGenreId<br>*Kobo Genre ID* | string | At least one is required | ID for identifying the genre in Rakuten Kobo<br>(Please note that this ID is different from the Rakuten Ichiba genre ID)<br>Parent is KoboGenreId = 101 (e-book).<br>If you want to browse the Genre structure, please use the "Rakuten Kobo genre search API (Kobo/GenreSearch)".
-<br>**Default Value:** <code>101</code>
+koboGenreId<br>*Kobo Genre ID* | string | At least one is required | ID for identifying the genre in Rakuten Kobo<br>(Please note that this ID is different from the Rakuten Ichiba genre ID)<br>Parent is KoboGenreId = 101 (e-book).<br>If you want to browse the Genre structure, please use the "Rakuten Kobo genre search API (Kobo/GenreSearch)".<br>**Default Value:** <code>101</code>
 language<br>*Language* | string | Optional | It is possible to specify the language of the e-book
-
-hits<br>*How many results per page* | integer | Optional | Integer 1 to 30.
-<br>**Default Value:** <code>30</code>
-page<br>*Result page* | integer | Optional | Integer 1 to 100.
-<br>**Default Value:** <code>1</code>
-sort<br>*Sort* | string | Optional | ※ Please use UTF-8 encoded parameters.
-<br>**Default Value:** <code>standard</code>
+hits<br>*How many results per page* | integer | Optional | Integer 1 to 30.<br>**Default Value:** <code>30</code>
+page<br>*Result page* | integer | Optional | Integer 1 to 100.<br>**Default Value:** <code>1</code>
+sort<br>*Sort* | string | Optional | ※ Please use UTF-8 encoded parameters.<br>*Valid Values:*<br><code>standard</code> standard<br><code>+releaseDate</code> Release Date (old)<br><code>-releaseDate</code> Release Date (new)<br><code>+itemPrice</code> Cheap price<br><code>-itemPrice</code> high price<br><code>reviewCount</code> Number of reviews<br><code>reviewAverage</code> High rating average<br>**Default Value:** <code>standard</code>
 NGKeyword<br>*Negative Keywords* | string | Optional | Keywords that you want to exclude from search query.
-
-field<br>*Search field* | integer | Optional | 
-<br>**Default Value:** <code>1</code>
-orFlag<br>*OR search flag* | integer | Optional | When multiple keywords are set it defaults for AND operator search, but you can switch to OR operator mode.
-<br>**Default Value:** <code>0</code>
-genreInformationFlag<br>*Genre information flag	* | integer | Optional | 
-<br>**Default Value:** <code>0</code>
-salesType<br>*Sales Type* | integer | Optional | 
-<br>**Default Value:** <code>ALL</code>
+field<br>*Search field* | integer | Optional | <br>*Valid Values:*<br><code>0</code> Broad search match<br><code>1</code> Exact search match<br>**Default Value:** <code>1</code>
+orFlag<br>*OR search flag* | integer | Optional | When multiple keywords are set it defaults for AND operator search, but you can switch to OR operator mode.<br>*Valid Values:*<br><code>0</code> AND search<br><code>1</code> OR search<br>**Default Value:** <code>0</code>
+genreInformationFlag<br>*Genre information flag	* | integer | Optional | <br>*Valid Values:*<br><code>0</code> do not get the items of information for each genre<br><code>1</code> get the items of information for each genre<br>**Default Value:** <code>0</code>
+salesType<br>*Sales Type* | integer | Optional | <br>*Valid Values:*<br><code>0</code> Normal items<br><code>1</code> Pre-Orders<br>**Default Value:** <code>ALL</code>
 affiliateId<br>*Affiliate ID* | string | Optional | If this endpoint supports affiliation, here you can enter your affiliate ID. If you do, the links in the API response will include your affiliate ID.
-
-format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
-<br>**Default Value:** <code>json</code>
+format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.<br>*Valid Values:*<br><code>json</code> <br><code>xml</code> <br>**Default Value:** <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
-
 elements<br>*Choosing output fields* | string | Optional | By default API will return all the fields. You can specify what fields should be returned by using this parameter.<br>If you want to specify more than one parameter, please use comma (<code>,</code>) as separator.<br>For example, following request will only return <code>itemName</code>, <code>itemPrice</code> and <code>itemUrl</code>.<br><code>elements=itemName,itemPrice,itemUrl</code>
-
-formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
-<br>**Default Value:** <code>1</code>
+formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre><br>*Valid Values:*<br><code>1</code> <br><code>2</code> <br>**Default Value:** <code>1</code>
 ## Response Example
 
 ### Request
