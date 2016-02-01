@@ -16,22 +16,72 @@ https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseSearch/20131113
 
 Name | Type | Required | Description
  --- | --- | --- | --- 
-keyword<br>*Search keywords* | string | Optional | UTF-8 encoded string.
-areaCode<br>*Area code* | integer | Optional | Code used to identify the area in Rakuten GORA.<br>If you want to examine the area code, please refer to the "Rakuten GORA Area Code List".
-latitude<br>*Latitude* | decimal | Optional | Please enter in Japan datum
-longitude<br>*Longitude* | decimal | Optional | Please enter in Japan datum
-searchRadius<br>*Search Radius* | integer | Optional | Latitude and longitude radius when searching (in km)<br>It can be specified between a radius of 10 ~ 300km
-hits<br>*How many results to display on each page* | integer | Optional | Integer of 1-30
-page<br>*Result page* | integer | Optional | Integer of 1-100
-sort<br>*Sort* | string | Optional | 
-reservation<br>*Booking* | integer | Optional | 
-carrier<br>*Platform* | integer | Optional | Whether to return information for PC or mobile phones.
 applicationId<br>*App ID* | string | Required | The Application ID that identifies your application. You can get it from <a href="https://webservice.rakuten.co.jp/" target="_blank">https://webservice.rakuten.co.jp/</a>.
+
+keyword<br>*Search keywords* | string | Optional | UTF-8 encoded string.
+
+areaCode<br>*Area code* | integer | Optional | Code used to identify the area in Rakuten GORA.<br>If you want to examine the area code, please refer to the "Rakuten GORA Area Code List".
+<br>*Default Value:* <code>0</code>
+latitude<br>*Latitude* | decimal | Optional | Please enter in Japan datum
+
+longitude<br>*Longitude* | decimal | Optional | Please enter in Japan datum
+
+searchRadius<br>*Search Radius* | integer | Optional | Latitude and longitude radius when searching (in km)<br>It can be specified between a radius of 10 ~ 300km
+<br>*Default Value:* <code>150</code>
+hits<br>*How many results to display on each page* | integer | Optional | Integer of 1-30
+<br>*Default Value:* <code>30</code>
+page<br>*Result page* | integer | Optional | Integer of 1-100
+<br>*Default Value:* <code>1</code>
+sort<br>*Sort* | string | Optional | 
+<br>*Valid Values:*
+* <code>rating</code> Overall - Reviews of large order
+* <code>50on</code> Overall - 50 alphabetical order
+* <code>prefecture</code> Overall - by prefecture
+* <code>highway</code> Overall - highway order
+* <code>reservation</code> Overall - reservation number order
+* <code>evaluation</code> Evaluation - comprehensive evaluation
+* <code>staff</code> Evaluation - Staff Hospitality
+* <code>facility</code> Evaluation - facilities enhancement
+* <code>meal</code> Evaluation - a delicious meal
+* <code>course</code> Evaluation - course / strategic
+* <code>costperformance</code> Evaluation - cost performance
+* <code>distance</code> Evaluation - distance is long
+* <code>fairway</code> Evaluation - fairway is wide
+* <code>friends</code> Recommended for - Enjoy / Casual
+* <code>entertainment</code> Recommended for - entertainment / luxury
+* <code>couple</code> Recommended for - couple
+* <code>athlete</code> Recommended for - Athletes
+* <code>beginner</code> Recommended for - novice
+* <code>normal</code> Recommended for - Intermediate
+* <code>senior</code> Recommended for - Advanced
+* <code>woman</code> Recommended for - Women
+<br>*Default Value:* <code>rating</code>
+reservation<br>*Booking* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> All golf
+* <code>1</code> golf course that can be reserved at Rakuten GORA only
+<br>*Default Value:* <code>1</code>
+carrier<br>*Platform* | integer | Optional | Whether to return information for PC or mobile phones.
+<br>*Valid Values:*
+* <code>0</code> PC
+* <code>1</code> Mobile
+<br>*Default Value:* <code>0</code>
 affiliateId<br>*Affiliate ID* | string | Optional | If this endpoint supports affiliation, here you can enter your affiliate ID. If you do, the links in the API response will include your affiliate ID.
+
 format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
+<br>*Valid Values:*
+* <code>json</code> 
+* <code>xml</code> 
+<br>*Default Value:* <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
+
 elements<br>*Choosing output fields* | string | Optional | By default API will return all the fields. You can specify what fields should be returned by using this parameter.<br>If you want to specify more than one parameter, please use comma (<code>,</code>) as separator.<br>For example, following request will only return <code>itemName</code>, <code>itemPrice</code> and <code>itemUrl</code>.<br><code>elements=itemName,itemPrice,itemUrl</code>
+
 formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
+<br>*Valid Values:*
+* <code>1</code> 
+* <code>2</code> 
+<br>*Default Value:* <code>1</code>
 ## Response Example
 
 ### Request

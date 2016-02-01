@@ -16,49 +16,226 @@ https://app.rakuten.co.jp/services/api/Gora/GoraPlanSearch/20150706
 
 Name | Type | Required | Description
  --- | --- | --- | --- 
-golfCourseName<br>*Golf course name* | string | Optional | UTF-8 encoded string.<br>You can search for multiple keywords by using space as separator.<br>(* 1) It is required to specify at least one of these parameters: golf course name, area code or golf course.
-areaCode<br>*Area code* | integer | Optional | Code used to identify the area in Rakuten GORA<br>If you want to examine the area code list, please refer to the "Rakuten GORA Area Code List".<br>This field allows you to specify more than one in CSV format.<br>Example: <code>areaCode=1,2,3</code><br>(* 1) It is required to specify at least one of these parameters: golf course name, area code or golf course.
-golfCourseId<br>*Golf course ID* | long | Optional | This field is included in the output of Rakuten GORA golf Search API (GoraGolfCourceSearch)<br>※ You can specify up to 30 values using comma as separator.<br>(* 1) It is required to specify at least one of these parameters: golf course name, area code or golf course.
 playDate<br>*Play Date* | string | Required | ※ Please enter in the form of YYYY-MM-DD<br>※ If you enter a past date, the response will result in an error
-hits<br>*How many results to display on each page	* | integer | Optional | Integer 1 to 30
-page<br>*Page number* | integer | Optional | Integer from 1 to 100
-sort<br>*Sort* | string | Optional | 
-minPrice<br>*Play rate (minimum price)* | integer | Optional | 
-maxPrice<br>*Play rate (maximum price)* | integer | Optional | Up to 25,000 yen
-startTimeZone<br>*Time Zone* | integer | Optional | This field allows you to specify more than one value in CSV format.<br>Example: <code>startTimeZone=5,7,9</code>
-range<br>*Continuous frame specified* | integer | Optional | You can search for continuous frame of the same course<br>※ continuous frame of more than the specified number of sets will be searched
-planCaddie<br>*[Plan designation] with caddy* | integer | Optional | 
-planCart<br>*[Plan designation] With riding cart* | integer | Optional | 
-planStay<br>*[Plan designation] accommodation plan* | integer | Optional | 
-planLunch<br>*[Plan designation] with lunch* | integer | Optional | 
-plan2sum<br>*[Plan designation] 2 Sum guarantee* | integer | Optional | 
-planDiscount4sum<br>*[Plan designation] 4 Sum discount* | integer | Optional | 
-planAdd1RFree<br>*[Plan designation] Additional 1R Free* | integer | Optional | 
-planAddHalfFree<br>*[Plan designation] Additional 0.5R Free* | integer | Optional | 
-planNoAddFee2b<br>*[Plan designation] 2B no additional charge* | integer | Optional | 
-planNoAddFee3b<br>*[Plan designation] 3B no additional charge* | integer | Optional | 
-planDrink<br>*[Plan designation] 1 drink* | integer | Optional | 
-planGoraOrg<br>*[Plan designation] GORA limited* | integer | Optional | 
-planLesson<br>*[Plan designation] lessons* | integer | Optional | 
-planOpenCompe<br>*[Plan designation] open competition* | integer | Optional | 
-planHalfRound<br>*[Plan designation] 9H play* | integer | Optional | 
-planEarly<br>*[Plan designation] early morning play* | integer | Optional | 
-NGPlan<br>*[Plan designation] Plan search exclusion (negative keywords)* | string | Optional | You can specify more than one in CSV format.<br>Example: <code>NGPlan=planCart,planLesson,planHalfRound</code><br>* we changed planLesson, from <code>planCompe</code> to <code>planOpenCompe</code>.
-courseType<br>*Course type* | integer | Optional | 
-shapeWideFairway<br>*[Course shape] fairway is wide* | integer | Optional | 
-shapeLessOB<br>*[Course shape] shape is less OB* | integer | Optional | 
-practiceFacility<br>*[Private] There practice field* | integer | Optional | 
-lodgingFacility<br>*[Facility] There accommodation* | integer | Optional | 
-onsenFacility<br>*[Facility] There Onsen* | integer | Optional | 
-highwayCode<br>*Highway code* | integer | Optional | Code used to identify the highway in Rakuten GORA<br>If you want to examine the highway code, the "Rakuten GORA highway code list" Please refer to<br>※ If there is no area specified, but can be narrowed down in all of the highway code, if the area is specified, the highway code that can be specified is different depending on the area, please note
-icDistance<br>*Distance from the interchange* | integer | Optional | 
-pointFlag<br>*Point gift flag* | integer | Optional | 
+
 applicationId<br>*App ID* | string | Required | The Application ID that identifies your application. You can get it from <a href="https://webservice.rakuten.co.jp/" target="_blank">https://webservice.rakuten.co.jp/</a>.
+
+golfCourseName<br>*Golf course name* | string | Optional | UTF-8 encoded string.<br>You can search for multiple keywords by using space as separator.<br>(* 1) It is required to specify at least one of these parameters: golf course name, area code or golf course.
+
+areaCode<br>*Area code* | integer | Optional | Code used to identify the area in Rakuten GORA<br>If you want to examine the area code list, please refer to the "Rakuten GORA Area Code List".<br>This field allows you to specify more than one in CSV format.<br>Example: <code>areaCode=1,2,3</code><br>(* 1) It is required to specify at least one of these parameters: golf course name, area code or golf course.
+<br>*Default Value:* <code>0</code>
+golfCourseId<br>*Golf course ID* | long | Optional | This field is included in the output of Rakuten GORA golf Search API (GoraGolfCourceSearch)<br>※ You can specify up to 30 values using comma as separator.<br>(* 1) It is required to specify at least one of these parameters: golf course name, area code or golf course.
+
+hits<br>*How many results to display on each page	* | integer | Optional | Integer 1 to 30
+<br>*Default Value:* <code>30</code>
+page<br>*Page number* | integer | Optional | Integer from 1 to 100
+<br>*Default Value:* <code>1</code>
+sort<br>*Sort* | string | Optional | 
+<br>*Valid Values:*
+* <code>reservation</code> how many reservations
+* <code>price</code> cheapest price
+* <code>evaluation</code> comprehensive evaluation
+* <code>staff</code> Staff Hospitality
+* <code>facility</code> facilities enhancement
+* <code>meal</code> how delicious is the meal
+* <code>course</code> course / strategic
+* <code>costperformance</code> cost performance
+* <code>distance</code> distance is long
+* <code>fairway</code> fairway is wide
+<br>*Default Value:* <code>reservation</code>
+minPrice<br>*Play rate (minimum price)* | integer | Optional | 
+
+maxPrice<br>*Play rate (maximum price)* | integer | Optional | Up to 25,000 yen
+
+startTimeZone<br>*Time Zone* | integer | Optional | This field allows you to specify more than one value in CSV format.<br>Example: <code>startTimeZone=5,7,9</code>
+<br>*Valid Values:*
+* <code>0</code> Not specified
+* <code>4</code> 4 o'clock
+* <code>5</code> 5 o'clock
+* <code>6</code> 6 o'clock
+* <code>7</code> 7 o'clock
+* <code>8</code> 8 o'clock
+* <code>9</code> 9 o'clock
+* <code>10</code> 10 o'clock
+* <code>11</code> 11 o'clock
+* <code>12</code> 12 o'clock
+* <code>13</code> 13 o'clock
+* <code>14</code> 14 o'clock
+* <code>15</code> 15 o'clock or later
+<br>*Default Value:* <code>0</code>
+range<br>*Continuous frame specified* | integer | Optional | You can search for continuous frame of the same course<br>※ continuous frame of more than the specified number of sets will be searched
+<br>*Valid Values:*
+* <code>0</code> Not specified
+* <code>2</code> 2
+* <code>3</code> 3
+* <code>4</code> 4
+* <code>5</code> 5
+* <code>6</code> 6
+* <code>7</code> 7
+* <code>8</code> 8
+* <code>9</code> 9
+* <code>10</code> 10 ~
+<br>*Default Value:* <code>0</code>
+planCaddie<br>*[Plan designation] with caddy* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planCart<br>*[Plan designation] With riding cart* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planStay<br>*[Plan designation] accommodation plan* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planLunch<br>*[Plan designation] with lunch* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+plan2sum<br>*[Plan designation] 2 Sum guarantee* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planDiscount4sum<br>*[Plan designation] 4 Sum discount* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planAdd1RFree<br>*[Plan designation] Additional 1R Free* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planAddHalfFree<br>*[Plan designation] Additional 0.5R Free* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planNoAddFee2b<br>*[Plan designation] 2B no additional charge* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planNoAddFee3b<br>*[Plan designation] 3B no additional charge* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planDrink<br>*[Plan designation] 1 drink* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planGoraOrg<br>*[Plan designation] GORA limited* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planLesson<br>*[Plan designation] lessons* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planOpenCompe<br>*[Plan designation] open competition* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planHalfRound<br>*[Plan designation] 9H play* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+planEarly<br>*[Plan designation] early morning play* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+NGPlan<br>*[Plan designation] Plan search exclusion (negative keywords)* | string | Optional | You can specify more than one in CSV format.<br>Example: <code>NGPlan=planCart,planLesson,planHalfRound</code><br>* we changed planLesson, from <code>planCompe</code> to <code>planOpenCompe</code>.
+<br>*Valid Values:*
+* <code>planCaddie</code> with caddy
+* <code>planCart</code> riding cart available
+* <code>planStay</code> accommodation plan
+* <code>planLesson</code> Lesson
+* <code>planOpenCompe</code> open competition [NEW]
+* <code>planRegularCompe</code> competition [NEW]
+* <code>planHalfRound</code> 9H play
+* <code>planEarly</code> early morning play
+
+courseType<br>*Course type* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> Not specified
+* <code>1</code> hill
+* <code>2</code> Rinkan
+* <code>3</code> River
+* <code>4</code> Mountain
+* <code>5</code> Seaside
+* <code>6</code> Plateau
+<br>*Default Value:* <code>0</code>
+shapeWideFairway<br>*[Course shape] fairway is wide* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+shapeLessOB<br>*[Course shape] shape is less OB* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+practiceFacility<br>*[Private] There practice field* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+lodgingFacility<br>*[Facility] There accommodation* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+onsenFacility<br>*[Facility] There Onsen* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> No
+* <code>1</code> Yes
+<br>*Default Value:* <code>0</code>
+highwayCode<br>*Highway code* | integer | Optional | Code used to identify the highway in Rakuten GORA<br>If you want to examine the highway code, the "Rakuten GORA highway code list" Please refer to<br>※ If there is no area specified, but can be narrowed down in all of the highway code, if the area is specified, the highway code that can be specified is different depending on the area, please note
+
+icDistance<br>*Distance from the interchange* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> Not specified
+* <code>1</code> Within 5km
+* <code>2</code> Within 10km
+* <code>3</code> Within 15km
+* <code>4</code> Within 20km
+* <code>5</code> Within 25km
+* <code>6</code> Within 30km
+* <code>7</code> 31km or more
+<br>*Default Value:* <code>0</code>
+pointFlag<br>*Point gift flag* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> Not specified
+* <code>1</code> point gifts
+<br>*Default Value:* <code>0</code>
 affiliateId<br>*Affiliate ID* | string | Optional | If this endpoint supports affiliation, here you can enter your affiliate ID. If you do, the links in the API response will include your affiliate ID.
+
 format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
+<br>*Valid Values:*
+* <code>json</code> 
+* <code>xml</code> 
+<br>*Default Value:* <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
+
 elements<br>*Choosing output fields* | string | Optional | By default API will return all the fields. You can specify what fields should be returned by using this parameter.<br>If you want to specify more than one parameter, please use comma (<code>,</code>) as separator.<br>For example, following request will only return <code>itemName</code>, <code>itemPrice</code> and <code>itemUrl</code>.<br><code>elements=itemName,itemPrice,itemUrl</code>
+
 formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
+<br>*Valid Values:*
+* <code>1</code> 
+* <code>2</code> 
+<br>*Default Value:* <code>1</code>
 ## Response Example
 
 ### Request

@@ -16,27 +16,92 @@ https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522
 
 Name | Type | Required | Description
  --- | --- | --- | --- 
-keyword<br>*Search keywords* | string | At least one is required | UTF-8 URL encoded string<br>The keyword parameter can have a maximum length of 128 single byte characters<br>The keyword parameter is delimited with single byte space characters. This defaults to an AND operation including all the keywords. To use OR instead set the orFlag to 1.<br>Each search keyword must be at least two single byte characters or one double byte character.<br>An exception is a minimum of two characters if the search keywords are using hiragana, katakana, or symbols.
-booksGenreId<br>*Book genre ID* | string | At least one is required | Book ID to specify a book genre.<br>Please use the Book Genre Search API to look up book genre names and genre relations.
-isbnjan<br>*ISBN/JAN code* | string | At least one is required | Use a 13 character code by removing all the hyphen symbols.<br>(*1) If ISBN/JAN code is specified, please do not set the search keywords and book genre ID parameters.
-hits<br>*How many results to display on each page* | integer | Optional | An integer between 1 and 30
-page<br>*Result page* | integer | Optional | An integer between 1 and 100
-availability<br>*Availability* | integer | Optional | 
-outOfStockFlag<br>*Out of Stock Flag* | integer | Optional | 
-chirayomiFlag<br>*Chira Yomi Flag* | integer | Optional | 
-sort<br>*Sort* | string | Optional | *UTF-8 URL encoding is required.
-limitedFlag<br>*Limited Flag* | integer | Optional | ※ Limited Edition include products such as limited time, limited quantity or reservation limited.
-field<br>*Search field* | integer | Optional | 
-carrier<br>*Platform* | integer | Optional | 
-orFlag<br>*OR search flag* | integer | Optional | Choose between AND searches and OR searches when there are multiple keywords.<br>*It isn't possible to use a complex search condition like "(A and B) or C".
-NGKeyword<br>*Excluded keywords (*3)* | string | Optional | Words to exclude from search results<br>Strings encoded with UTF-8 URL encoding<br>Same format as keyword<br>(*3) This field can only be used if the search keywords field is set.
-genreInformationFlag<br>*Genre information flag* | integer | Optional | 
 applicationId<br>*App ID* | string | Required | The Application ID that identifies your application. You can get it from <a href="https://webservice.rakuten.co.jp/" target="_blank">https://webservice.rakuten.co.jp/</a>.
+
+keyword<br>*Search keywords* | string | At least one is required | UTF-8 URL encoded string<br>The keyword parameter can have a maximum length of 128 single byte characters<br>The keyword parameter is delimited with single byte space characters. This defaults to an AND operation including all the keywords. To use OR instead set the orFlag to 1.<br>Each search keyword must be at least two single byte characters or one double byte character.<br>An exception is a minimum of two characters if the search keywords are using hiragana, katakana, or symbols.
+
+booksGenreId<br>*Book genre ID* | string | At least one is required | Book ID to specify a book genre.<br>Please use the Book Genre Search API to look up book genre names and genre relations.
+<br>*Default Value:* <code>000</code>
+isbnjan<br>*ISBN/JAN code* | string | At least one is required | Use a 13 character code by removing all the hyphen symbols.<br>(*1) If ISBN/JAN code is specified, please do not set the search keywords and book genre ID parameters.
+
+hits<br>*How many results to display on each page* | integer | Optional | An integer between 1 and 30
+<br>*Default Value:* <code>30</code>
+page<br>*Result page* | integer | Optional | An integer between 1 and 100
+<br>*Default Value:* <code>1</code>
+availability<br>*Availability* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> all items
+* <code>1</code> In Stock
+* <code>2</code> Usually ships in about 3 to 7 days
+* <code>3</code> Usually ships in about 3 to 9 days
+* <code>4</code> Manufacturer stock
+* <code>5</code> Preorder
+* <code>6</code> Check stock with manufacturer
+<br>*Default Value:* <code>0</code>
+outOfStockFlag<br>*Out of Stock Flag* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> Do not include out of stock items.
+* <code>1</code> Include out of stock items.
+<br>*Default Value:* <code>0</code>
+chirayomiFlag<br>*Chira Yomi Flag* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> All items.
+* <code>1</code> Only chirayomi (free preview) items.
+<br>*Default Value:* <code>0</code>
+sort<br>*Sort* | string | Optional | *UTF-8 URL encoding is required.
+<br>*Valid Values:*
+* <code>standard</code> 
+* <code>sales</code> 
+* <code>+releaseDate</code> Release date (Ascending order)
+* <code>-releaseDate</code> Release date (Descending order)
+* <code>+itemPrice</code> Item price (Ascending order)
+* <code>-itemPrice</code> Item price (Descending order)
+* <code>reviewCount</code> 
+* <code>reviewAverage</code> 
+<br>*Default Value:* <code>standard</code>
+limitedFlag<br>*Limited Flag* | integer | Optional | ※ Limited Edition include products such as limited time, limited quantity or reservation limited.
+<br>*Valid Values:*
+* <code>0</code> All items
+* <code>1</code> Limited Edition only
+<br>*Default Value:* <code>0</code>
+field<br>*Search field* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> Broad search (prefer more matches with the same keyword)
+* <code>1</code> Restricted search (prefer fewer matches with the same keyword)
+<br>*Default Value:* <code>0</code>
+carrier<br>*Platform* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> PC
+* <code>1</code> Mobile
+<br>*Default Value:* <code>1</code>
+orFlag<br>*OR search flag* | integer | Optional | Choose between AND searches and OR searches when there are multiple keywords.<br>*It isn't possible to use a complex search condition like "(A and B) or C".
+<br>*Valid Values:*
+* <code>0</code> AND
+* <code>1</code> OR
+<br>*Default Value:* <code>0</code>
+NGKeyword<br>*Excluded keywords (*3)* | string | Optional | Words to exclude from search results<br>Strings encoded with UTF-8 URL encoding<br>Same format as keyword<br>(*3) This field can only be used if the search keywords field is set.
+
+genreInformationFlag<br>*Genre information flag* | integer | Optional | 
+<br>*Valid Values:*
+* <code>0</code> Do not get number of item in each genre.
+* <code>1</code> Get number of item in each genre.
+<br>*Default Value:* <code>0</code>
 affiliateId<br>*Affiliate ID* | string | Optional | If this endpoint supports affiliation, here you can enter your affiliate ID. If you do, the links in the API response will include your affiliate ID.
+
 format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
+<br>*Valid Values:*
+* <code>json</code> 
+* <code>xml</code> 
+<br>*Default Value:* <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
+
 elements<br>*Choosing output fields* | string | Optional | By default API will return all the fields. You can specify what fields should be returned by using this parameter.<br>If you want to specify more than one parameter, please use comma (<code>,</code>) as separator.<br>For example, following request will only return <code>itemName</code>, <code>itemPrice</code> and <code>itemUrl</code>.<br><code>elements=itemName,itemPrice,itemUrl</code>
+
 formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
+<br>*Valid Values:*
+* <code>1</code> 
+* <code>2</code> 
+<br>*Default Value:* <code>1</code>
 ## Response Example
 
 ### Request
