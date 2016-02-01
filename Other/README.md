@@ -1,4 +1,4 @@
-## Other
+# Other
 
 ![Other](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten.png)
 * **Name** Other

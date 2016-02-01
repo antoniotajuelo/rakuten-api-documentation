@@ -1,4 +1,4 @@
-## Rakuten Kobo
+# Rakuten Kobo
 
 ![Rakuten Kobo](https://media.antoniotajuelo.com/rakuten/service/logo/kobo.png)
 * **Name** Rakuten Kobo

@@ -1,4 +1,4 @@
-## Rakuten GORA
+# Rakuten GORA
 
 ![Rakuten GORA](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-gora.png)
 * **Name** Rakuten GORA

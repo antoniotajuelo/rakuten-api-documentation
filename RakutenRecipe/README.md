@@ -1,4 +1,4 @@
-## Rakuten Recipe
+# Rakuten Recipe
 
 ![Rakuten Recipe](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-recipes.png)
 * **Name** Rakuten Recipe

@@ -1,4 +1,4 @@
-## Rakuten Books
+# Rakuten Books
 
 ![Rakuten Books](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png)
 * **Name** Rakuten Books

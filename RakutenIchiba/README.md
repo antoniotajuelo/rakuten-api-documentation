@@ -1,4 +1,4 @@
-## Rakuten Ichiba
+# Rakuten Ichiba
 
 ![Rakuten Ichiba](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png)
 * **Name** Rakuten Ichiba

@@ -1,18 +1,18 @@
 
-### Travel/KeywordHotelSearch
+# Travel/KeywordHotelSearch
 
-#### Description
+## Description
 
 Gets up to 30 hotels by keyword.
-#### Resource URL
+## Resource URL
 
 https://app.rakuten.co.jp/services/api/Travel/KeywordHotelSearch/20131024
-#### Resource Information
+## Resource Information
 
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-#### Parameters
+## Parameters
 
 Name | Type | Required | Description
  --- | --- | --- | --- 
