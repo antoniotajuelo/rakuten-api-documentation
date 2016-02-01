@@ -38,42 +38,42 @@ page<br>*Result page* | integer | Optional | Integer 1 to 100.
 <br>*Default Value:* <code>1</code>
 sort<br>*Sort* | string | Optional | ※ Please use UTF-8 encoded parameters.
 <br>*Valid Values:*
-* <code>standard</code> standard
-* <code>+releaseDate</code> Release Date (old)
-* <code>-releaseDate</code> Release Date (new)
-* <code>+itemPrice</code> Cheap price
-* <code>-itemPrice</code> high price
-* <code>reviewCount</code> Number of reviews
-* <code>reviewAverage</code> High rating average
+<br><code>standard</code> standard
+<br><code>+releaseDate</code> Release Date (old)
+<br><code>-releaseDate</code> Release Date (new)
+<br><code>+itemPrice</code> Cheap price
+<br><code>-itemPrice</code> high price
+<br><code>reviewCount</code> Number of reviews
+<br><code>reviewAverage</code> High rating average
 <br>*Default Value:* <code>standard</code>
 NGKeyword<br>*Negative Keywords* | string | Optional | Keywords that you want to exclude from search query.
 
 field<br>*Search field* | integer | Optional | 
 <br>*Valid Values:*
-* <code>0</code> Broad search match
-* <code>1</code> Exact search match
+<br><code>0</code> Broad search match
+<br><code>1</code> Exact search match
 <br>*Default Value:* <code>1</code>
 orFlag<br>*OR search flag* | integer | Optional | When multiple keywords are set it defaults for AND operator search, but you can switch to OR operator mode.
 <br>*Valid Values:*
-* <code>0</code> AND search
-* <code>1</code> OR search
+<br><code>0</code> AND search
+<br><code>1</code> OR search
 <br>*Default Value:* <code>0</code>
 genreInformationFlag<br>*Genre information flag	* | integer | Optional | 
 <br>*Valid Values:*
-* <code>0</code> do not get the items of information for each genre
-* <code>1</code> get the items of information for each genre
+<br><code>0</code> do not get the items of information for each genre
+<br><code>1</code> get the items of information for each genre
 <br>*Default Value:* <code>0</code>
 salesType<br>*Sales Type* | integer | Optional | 
 <br>*Valid Values:*
-* <code>0</code> Normal items
-* <code>1</code> Pre-Orders
+<br><code>0</code> Normal items
+<br><code>1</code> Pre-Orders
 <br>*Default Value:* <code>ALL</code>
 affiliateId<br>*Affiliate ID* | string | Optional | If this endpoint supports affiliation, here you can enter your affiliate ID. If you do, the links in the API response will include your affiliate ID.
 
 format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
 <br>*Valid Values:*
-* <code>json</code> 
-* <code>xml</code> 
+<br><code>json</code> 
+<br><code>xml</code> 
 <br>*Default Value:* <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
 
@@ -81,8 +81,8 @@ elements<br>*Choosing output fields* | string | Optional | By default API will r
 
 formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
 <br>*Valid Values:*
-* <code>1</code> 
-* <code>2</code> 
+<br><code>1</code> 
+<br><code>2</code> 
 <br>*Default Value:* <code>1</code>
 ## Response Example
 

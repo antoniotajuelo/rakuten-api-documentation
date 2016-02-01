@@ -34,44 +34,44 @@ page<br>*Result page* | integer | Optional | Integer of 1-100
 <br>*Default Value:* <code>1</code>
 sort<br>*Sort* | string | Optional | 
 <br>*Valid Values:*
-* <code>rating</code> Overall - Reviews of large order
-* <code>50on</code> Overall - 50 alphabetical order
-* <code>prefecture</code> Overall - by prefecture
-* <code>highway</code> Overall - highway order
-* <code>reservation</code> Overall - reservation number order
-* <code>evaluation</code> Evaluation - comprehensive evaluation
-* <code>staff</code> Evaluation - Staff Hospitality
-* <code>facility</code> Evaluation - facilities enhancement
-* <code>meal</code> Evaluation - a delicious meal
-* <code>course</code> Evaluation - course / strategic
-* <code>costperformance</code> Evaluation - cost performance
-* <code>distance</code> Evaluation - distance is long
-* <code>fairway</code> Evaluation - fairway is wide
-* <code>friends</code> Recommended for - Enjoy / Casual
-* <code>entertainment</code> Recommended for - entertainment / luxury
-* <code>couple</code> Recommended for - couple
-* <code>athlete</code> Recommended for - Athletes
-* <code>beginner</code> Recommended for - novice
-* <code>normal</code> Recommended for - Intermediate
-* <code>senior</code> Recommended for - Advanced
-* <code>woman</code> Recommended for - Women
+<br><code>rating</code> Overall - Reviews of large order
+<br><code>50on</code> Overall - 50 alphabetical order
+<br><code>prefecture</code> Overall - by prefecture
+<br><code>highway</code> Overall - highway order
+<br><code>reservation</code> Overall - reservation number order
+<br><code>evaluation</code> Evaluation - comprehensive evaluation
+<br><code>staff</code> Evaluation - Staff Hospitality
+<br><code>facility</code> Evaluation - facilities enhancement
+<br><code>meal</code> Evaluation - a delicious meal
+<br><code>course</code> Evaluation - course / strategic
+<br><code>costperformance</code> Evaluation - cost performance
+<br><code>distance</code> Evaluation - distance is long
+<br><code>fairway</code> Evaluation - fairway is wide
+<br><code>friends</code> Recommended for - Enjoy / Casual
+<br><code>entertainment</code> Recommended for - entertainment / luxury
+<br><code>couple</code> Recommended for - couple
+<br><code>athlete</code> Recommended for - Athletes
+<br><code>beginner</code> Recommended for - novice
+<br><code>normal</code> Recommended for - Intermediate
+<br><code>senior</code> Recommended for - Advanced
+<br><code>woman</code> Recommended for - Women
 <br>*Default Value:* <code>rating</code>
 reservation<br>*Booking* | integer | Optional | 
 <br>*Valid Values:*
-* <code>0</code> All golf
-* <code>1</code> golf course that can be reserved at Rakuten GORA only
+<br><code>0</code> All golf
+<br><code>1</code> golf course that can be reserved at Rakuten GORA only
 <br>*Default Value:* <code>1</code>
 carrier<br>*Platform* | integer | Optional | Whether to return information for PC or mobile phones.
 <br>*Valid Values:*
-* <code>0</code> PC
-* <code>1</code> Mobile
+<br><code>0</code> PC
+<br><code>1</code> Mobile
 <br>*Default Value:* <code>0</code>
 affiliateId<br>*Affiliate ID* | string | Optional | If this endpoint supports affiliation, here you can enter your affiliate ID. If you do, the links in the API response will include your affiliate ID.
 
 format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
 <br>*Valid Values:*
-* <code>json</code> 
-* <code>xml</code> 
+<br><code>json</code> 
+<br><code>xml</code> 
 <br>*Default Value:* <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
 
@@ -79,8 +79,8 @@ elements<br>*Choosing output fields* | string | Optional | By default API will r
 
 formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
 <br>*Valid Values:*
-* <code>1</code> 
-* <code>2</code> 
+<br><code>1</code> 
+<br><code>2</code> 
 <br>*Default Value:* <code>1</code>
 ## Response Example
 

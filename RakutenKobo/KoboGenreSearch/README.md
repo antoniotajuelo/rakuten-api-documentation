@@ -22,13 +22,13 @@ koboGenreId<br>*Kobo Genre ID* | string | Optional | Kobo genre ID.<br>koboGenre
 <br>*Default Value:* <code>101</code>
 genrePath<br>*Genre path* | integer | Optional | Whether or not to include a the ancestor genres in the result set:
 <br>*Valid Values:*
-* <code>0</code> do not include ancestors
-* <code>1</code> include ancestors
+<br><code>0</code> do not include ancestors
+<br><code>1</code> include ancestors
 <br>*Default Value:* <code>0</code>
 format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
 <br>*Valid Values:*
-* <code>json</code> 
-* <code>xml</code> 
+<br><code>json</code> 
+<br><code>xml</code> 
 <br>*Default Value:* <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
 
@@ -36,8 +36,8 @@ elements<br>*Choosing output fields* | string | Optional | By default API will r
 
 formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
 <br>*Valid Values:*
-* <code>1</code> 
-* <code>2</code> 
+<br><code>1</code> 
+<br><code>2</code> 
 <br>*Default Value:* <code>1</code>
 ## Response Example
 

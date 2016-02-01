@@ -60,20 +60,20 @@ searchRadius<br>*Search Radius* | integer | Optional | Distance in km around lat
 <br>*Default Value:* <code>1</code>
 squeezeCondition<br>*Narrowing Conditions* | string | Optional | This field allows you to specify more than one, using commas as separator.<br>Example: a non smoking room in hot spring inn: <code>squeezeCondition=kinen,onsen</code>
 <br>*Valid Values:*
-* <code>kinen</code> non smoking rooms
-* <code>internet</code> Internet in the room
-* <code>daiyoku</code> public bath
-* <code>onsen</code> Onsen
+<br><code>kinen</code> non smoking rooms
+<br><code>internet</code> Internet in the room
+<br><code>daiyoku</code> public bath
+<br><code>onsen</code> Onsen
 
 carrier<br>*Platform* | integer | Optional | Whether to return information for PC/smartphone or mobile phone.
 <br>*Valid Values:*
-* <code>0</code> PC / smartphone
-* <code>1</code> Mobile phones
+<br><code>0</code> PC / smartphone
+<br><code>1</code> Mobile phones
 <br>*Default Value:* <code>0</code>
 datumType<br>*Latitude and longitude type* | integer | Optional | It specifies the latitude and longitude type of input and output parameters.
 <br>*Valid Values:*
-* <code>1</code> World Geodetic System.
-* <code>2</code> Japan geodetic system.
+<br><code>1</code> World Geodetic System.
+<br><code>2</code> Japan geodetic system.
 <br>*Default Value:* <code>2</code>
 hits<br>*How many results per page	* | integer | Optional | Parameters that determines the number of results per page.<br>Integer from 1 to 30.<br>(* 1) If the allReturnFlag was specified by the latitude and longitude search, page and the hits parameters will not be used.
 <br>*Default Value:* <code>30</code>
@@ -81,26 +81,26 @@ page<br>*Result page	* | integer | Optional | Number of page.<br>Integer between
 <br>*Default Value:* <code>1</code>
 searchPattern<br>*Search pattern* | integer | Optional | Parameter to specify the search pattern
 <br>*Valid Values:*
-* <code>0</code> each hotel
-* <code>1</code> Accommodation for each plan
+<br><code>0</code> each hotel
+<br><code>1</code> Accommodation for each plan
 <br>*Default Value:* <code>0</code>
 hotelThumbnailSize<br>*Hotel Thumbnail Size* | integer | Optional | Specify the image size of the hotel image thumbnail URL of the output parameters.
 <br>*Valid Values:*
-* <code>1</code> Small
-* <code>2</code> Medium
-* <code>3</code> Large
+<br><code>1</code> Small
+<br><code>2</code> Medium
+<br><code>3</code> Large
 <br>*Default Value:* <code>2</code>
 responseType<br>*Response Type	* | string | Optional | Specify the amount of information returned in the response:
 <br>*Valid Values:*
-* <code>small</code> minimum amount of information
-* <code>middle</code> standard amount of information
-* <code>large</code> all the information
+<br><code>small</code> minimum amount of information
+<br><code>middle</code> standard amount of information
+<br><code>large</code> all the information
 <br>*Default Value:* <code>small</code>
 sort<br>*Sort* | string | Optional | 
 <br>*Valid Values:*
-* <code>standard</code> Recommended order
-* <code>+roomCharge</code> Best Available Rate (Low to High)
-* <code>-roomCharge</code> Best Available Rate (high order)
+<br><code>standard</code> Recommended order
+<br><code>+roomCharge</code> Best Available Rate (Low to High)
+<br><code>-roomCharge</code> Best Available Rate (high order)
 <br>*Default Value:* <code>standard</code>
 allReturnFlag<br>*All return flag	* | integer | Optional | Flag for all cases return the information corresponding to the condition. (* 1) (* 2)<br>1: Return all results<br>(* 1) in the latitude and longitude search, responseType is small. It is only available when searchPattern is 0.<br>(* 2) If the page and hits has been specified, allReturnFlag is disabled.
 
@@ -108,8 +108,8 @@ affiliateId<br>*Affiliate ID* | string | Optional | If this endpoint supports af
 
 format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.
 <br>*Valid Values:*
-* <code>json</code> 
-* <code>xml</code> 
+<br><code>json</code> 
+<br><code>xml</code> 
 <br>*Default Value:* <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
 
@@ -117,8 +117,8 @@ elements<br>*Choosing output fields* | string | Optional | By default API will r
 
 formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre>
 <br>*Valid Values:*
-* <code>1</code> 
-* <code>2</code> 
+<br><code>1</code> 
+<br><code>2</code> 
 <br>*Default Value:* <code>1</code>
 ## Response Example
 
