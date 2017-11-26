@@ -32,13 +32,6 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 * **URL** http://travel.rakuten.co.jp/
 * **Description** Rakuten's travel reservation website.
 
-### [Rakuten Auction](RakutenAuction)
-
-![Rakuten Auction](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-auctions.png)
-* **Name** Rakuten Auction
-* **URL** http://auction.rakuten.co.jp/
-* **Description** Rakuten's auction website.
-
 ### [Rakuten Kobo](RakutenKobo)
 
 ![Rakuten Kobo](https://media.antoniotajuelo.com/rakuten/service/logo/kobo.png)
