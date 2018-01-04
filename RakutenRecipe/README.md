@@ -1,8 +1,8 @@
 # Rakuten Recipe
 
-![Rakuten Recipe](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-recipes.png)
+![Rakuten Recipe](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-recipe-logo.1515018766.png)
 * **Name** Rakuten Recipe
-* **URL** http://recipe.rakuten.co.jp/
+* **URL** https://recipe.rakuten.co.jp/
 * **Description** Rakuten Recipe is a community for sharing cooking recipes.
 
 # Endpoints

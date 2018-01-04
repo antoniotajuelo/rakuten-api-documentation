@@ -1,8 +1,8 @@
 # Rakuten Kobo
 
-![Rakuten Kobo](https://media.antoniotajuelo.com/rakuten/service/logo/kobo.png)
+![Rakuten Kobo](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-books-logo.1515018766.png)
 * **Name** Rakuten Kobo
-* **URL** https://www.kobo.com/
+* **URL** https://books.rakuten.co.jp/
 * **Description** Rakuten's e-book reader and bookstore.
 
 # Endpoints

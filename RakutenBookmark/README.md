@@ -1,9 +1,9 @@
 # Rakuten Bookmark
 
-![Rakuten Bookmark](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten-ichiba.png)
+![Rakuten Bookmark](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-logo.1515018766.png)
 * **Name** Rakuten Bookmark
-* **URL** http://my.bookmark.rakuten.co.jp/
-* **Description** Rakuten's service for allowing users to make list of their favorite items.
+* **URL** https://my.bookmark.rakuten.co.jp/
+* **Description** Rakuten's service for customer favorite items lists.
 
 # Endpoints
 

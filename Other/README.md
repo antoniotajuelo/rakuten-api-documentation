@@ -1,6 +1,6 @@
 # Other
 
-![Other](https://media.antoniotajuelo.com/rakuten/service/logo/rakuten.png)
+![Other](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-logo.1515018766.png)
 * **Name** Other
 * **Description** Other APIs offered by Rakuten that do not belong to a specific service.
 
