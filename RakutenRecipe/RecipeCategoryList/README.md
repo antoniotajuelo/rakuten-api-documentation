@@ -6,7 +6,7 @@
 Gets the full recipe category list.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20121121
+https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426
 ## Resource Information
 
 * **Auth Type** App Key
@@ -26,7 +26,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20121121?applicationId=REPLACE_WITH_YOUR_APP_ID
+https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?applicationId=REPLACE_WITH_YOUR_APP_ID
 ### Response
 
 ```json

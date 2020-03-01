@@ -6,7 +6,7 @@
 Gets a hotel details by hotel number.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20131024
+https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20170426
 ## Resource Information
 
 * **Auth Type** App Key
@@ -31,7 +31,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20131024?applicationId=REPLACE_WITH_YOUR_APP_ID&hotelNo=136197
+https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20170426?applicationId=REPLACE_WITH_YOUR_APP_ID&hotelNo=136197
 ### Response
 
 ```json

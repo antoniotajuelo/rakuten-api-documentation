@@ -6,7 +6,7 @@
 Gets a golf course details by a golf course id.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseDetail/20140410
+https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseDetail/20170623
 ## Resource Information
 
 * **Auth Type** App Key
@@ -28,7 +28,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseDetail/20140410?applicationId=REPLACE_WITH_YOUR_APP_ID&golfCourseId=80004
+https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseDetail/20170623?applicationId=REPLACE_WITH_YOUR_APP_ID&golfCourseId=80004
 ### Response
 
 ```json

@@ -6,7 +6,7 @@
 Gets up to 30 golf courses by a date.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/Gora/GoraPlanSearch/20150706
+https://app.rakuten.co.jp/services/api/Gora/GoraPlanSearch/20170623
 ## Resource Information
 
 * **Auth Type** App Key
@@ -63,7 +63,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Gora/GoraPlanSearch/20150706?applicationId=REPLACE_WITH_YOUR_APP_ID&playDate=2016-02-05&hits=3
+https://app.rakuten.co.jp/services/api/Gora/GoraPlanSearch/20170623?applicationId=REPLACE_WITH_YOUR_APP_ID&playDate=2016-02-05&hits=3
 ### Response
 
 ```json

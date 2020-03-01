@@ -6,7 +6,7 @@
 Gets up to 30 vacant hotels for a specified checkin and checkout dates by area class code, hotel number or coordinates.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/Travel/VacantHotelSearch/20131024
+https://app.rakuten.co.jp/services/api/Travel/VacantHotelSearch/20170426
 ## Resource Information
 
 * **Auth Type** App Key
@@ -56,7 +56,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Travel/VacantHotelSearch/20131024?applicationId=REPLACE_WITH_YOUR_APP_ID&latitude=125994.28&longitude=488781.51&checkinDate=2016-06-24&checkoutDate=2016-06-29&hits=3
+https://app.rakuten.co.jp/services/api/Travel/VacantHotelSearch/20170426?applicationId=REPLACE_WITH_YOUR_APP_ID&latitude=125994.28&longitude=488781.51&checkinDate=2016-06-24&checkoutDate=2016-06-29&hits=3
 ### Response
 
 ```json

@@ -6,7 +6,7 @@
 Gets up to 30 foreign book items by title, author, publisher, ISBN or genre.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20130522
+https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20170404
 ## Resource Information
 
 * **Auth Type** App Key
@@ -39,7 +39,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20130522?applicationId=REPLACE_WITH_YOUR_APP_ID&author=cervantes&hits=3
+https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20170404?applicationId=REPLACE_WITH_YOUR_APP_ID&author=cervantes&hits=3
 ### Response
 
 ```json

@@ -6,7 +6,7 @@
 Gets up to 40 favorite bookmarks from the user performing the API call.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/FavoriteBookmark/List/20120627
+https://app.rakuten.co.jp/services/api/FavoriteBookmark/List/20170426
 ## Resource Information
 
 * **Auth Type** OAuth
@@ -31,7 +31,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/FavoriteBookmark/List/20120627?access_token=REPLACE_WITH_THE_USER_ACCESS_TOKEN
+https://app.rakuten.co.jp/services/api/FavoriteBookmark/List/20170426?access_token=REPLACE_WITH_THE_USER_ACCESS_TOKEN
 ### Response
 
 ```json

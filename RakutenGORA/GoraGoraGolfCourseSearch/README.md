@@ -6,7 +6,7 @@
 Gets up to 30 golf courses.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseSearch/20131113
+https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseSearch/20170623
 ## Resource Information
 
 * **Auth Type** App Key
@@ -36,7 +36,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseSearch/20131113?applicationId=REPLACE_WITH_YOUR_APP_ID&hits=3
+https://app.rakuten.co.jp/services/api/Gora/GoraGolfCourseSearch/20170623?applicationId=REPLACE_WITH_YOUR_APP_ID&hits=3
 ### Response
 
 ```json

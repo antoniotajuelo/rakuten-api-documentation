@@ -6,7 +6,7 @@
 Gets up to 30 Kobo items by keyword, title, author, publisher, item number or genre.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/Kobo/EbookSearch/20140811
+https://app.rakuten.co.jp/services/api/Kobo/EbookSearch/20170426
 ## Resource Information
 
 * **Auth Type** App Key
@@ -41,7 +41,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Kobo/EbookSearch/20140811?applicationId=REPLACE_WITH_YOUR_APP_ID&author=村上春樹&hits=3
+https://app.rakuten.co.jp/services/api/Kobo/EbookSearch/20170426?applicationId=REPLACE_WITH_YOUR_APP_ID&author=村上春樹&hits=3
 ### Response
 
 ```json

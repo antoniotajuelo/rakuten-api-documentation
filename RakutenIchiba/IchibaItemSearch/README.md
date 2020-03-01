@@ -6,7 +6,7 @@
 Gets up to 30 items by keywords, shop, shop item code or genre.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222
+https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706
 ## Resource Information
 
 * **Auth Type** App Key
@@ -61,7 +61,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=REPLACE_WITH_YOUR_APP_ID&keyword=すし&hits=3
+https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706?applicationId=REPLACE_WITH_YOUR_APP_ID&keyword=すし&hits=3
 ### Response
 
 ```json

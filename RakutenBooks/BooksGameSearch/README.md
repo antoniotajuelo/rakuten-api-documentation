@@ -6,7 +6,7 @@
 Gets up to 30 game items by title, hardware, maker, label, JAN or genre.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/BooksGame/Search/20130522
+https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404
 ## Resource Information
 
 * **Auth Type** App Key
@@ -40,7 +40,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/BooksGame/Search/20130522?applicationId=REPLACE_WITH_YOUR_APP_ID&title=mario&hits=3
+https://app.rakuten.co.jp/services/api/BooksGame/Search/20170404?applicationId=REPLACE_WITH_YOUR_APP_ID&title=mario&hits=3
 ### Response
 
 ```json

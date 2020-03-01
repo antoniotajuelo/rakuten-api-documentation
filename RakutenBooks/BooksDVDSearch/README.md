@@ -6,7 +6,7 @@
 Gets up to 30 DVD/Blu-ray items by title, artist, label, JAN or genre.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/BooksDVD/Search/20130522
+https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404
 ## Resource Information
 
 * **Auth Type** App Key
@@ -39,7 +39,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/BooksDVD/Search/20130522?applicationId=REPLACE_WITH_YOUR_APP_ID&title=ワンピース&hits=3
+https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?applicationId=REPLACE_WITH_YOUR_APP_ID&title=ワンピース&hits=3
 ### Response
 
 ```json

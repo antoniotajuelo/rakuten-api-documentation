@@ -6,7 +6,7 @@
 Gets a genre's attributes, tag groups, children genres, brother genres and ancestor genres by genre id.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20120723
+https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20140222
 ## Resource Information
 
 * **Auth Type** App Key
@@ -27,7 +27,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20120723?applicationId=REPLACE_WITH_YOUR_APP_ID&genreId=101164
+https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20140222?applicationId=REPLACE_WITH_YOUR_APP_ID&genreId=101164
 ### Response
 
 ```json

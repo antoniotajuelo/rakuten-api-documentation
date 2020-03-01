@@ -6,7 +6,7 @@
 Gets up to 30 best seller items from all items, items from a specific genre or popular items among an age and gender demographic group.
 ## Resource URL
 
-https://app.rakuten.co.jp/services/api/IchibaItem/Ranking/20120927
+https://app.rakuten.co.jp/services/api/IchibaItem/Ranking/20170628
 ## Resource Information
 
 * **Auth Type** App Key
@@ -32,7 +32,7 @@ formatVersion<br>*Format version* | integer | Optional | Response format version
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/IchibaItem/Ranking/20120927?applicationId=REPLACE_WITH_YOUR_APP_ID
+https://app.rakuten.co.jp/services/api/IchibaItem/Ranking/20170628?applicationId=REPLACE_WITH_YOUR_APP_ID
 ### Response
 
 ```json
