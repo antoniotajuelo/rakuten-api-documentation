@@ -1,6 +1,6 @@
 # Rakuten GORA
 
-![Rakuten GORA](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-gora-logo.svg | width=100)
+![Rakuten GORA](./RakutenGORA/logo.svg | width=100)
 * **Name** Rakuten GORA
 * **URL** https://gora.golf.rakuten.co.jp/
 * **Description** Rakuten's online golf reservation site.

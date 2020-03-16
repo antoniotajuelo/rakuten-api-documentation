@@ -1,6 +1,6 @@
 # Rakuten Books
 
-![Rakuten Books](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-books-logo.svg | width=100)
+![Rakuten Books](./RakutenBooks/logo.svg | width=100)
 * **Name** Rakuten Books
 * **URL** https://books.rakuten.co.jp/
 * **Description** Rakuten's media products shop: books, magazines, videogames, DVDs, Blu-ray and software.

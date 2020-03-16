@@ -1,6 +1,6 @@
 # Rakuten Travel
 
-![Rakuten Travel](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-travel-logo.svg | width=100)
+![Rakuten Travel](./RakutenTravel/logo.svg | width=100)
 * **Name** Rakuten Travel
 * **URL** https://travel.rakuten.co.jp/
 * **Description** Rakuten's travel reservation website.
