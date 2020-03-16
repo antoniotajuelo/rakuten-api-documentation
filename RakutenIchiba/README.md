@@ -1,6 +1,6 @@
 # Rakuten Ichiba
 
-![Rakuten Ichiba](./RakutenIchiba/logo.svg)
+![Rakuten Ichiba](./RakutenIchiba/logo.svg{:width="100px")
 * **Name** Rakuten Ichiba
 * **URL** https://www.rakuten.co.jp/
 * **Description** Rakuten's e-commerce platform.
