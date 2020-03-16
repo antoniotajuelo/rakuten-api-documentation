@@ -6,7 +6,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Ichiba](RakutenIchiba)
 
-![Rakuten Ichiba](./RakutenIchiba/logo.svg){:width="100px"}
+<img alt="Rakuten Ichiba" src="./RakutenIchiba/logo.svg" width="200px">
 * **Name** Rakuten Ichiba
 * **URL** https://www.rakuten.co.jp/
 * **Description** Rakuten's e-commerce platform.
@@ -14,7 +14,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Bookmark](RakutenBookmark)
 
-![Rakuten Bookmark](./RakutenBookmark/logo.svg){:width="100px"}
+<img alt="Rakuten Bookmark" src="./RakutenBookmark/logo.svg" width="200px">
 * **Name** Rakuten Bookmark
 * **URL** https://my.bookmark.rakuten.co.jp/
 * **Description** Rakuten's service for customer favorite items lists.
@@ -22,7 +22,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Books](RakutenBooks)
 
-![Rakuten Books](./RakutenBooks/logo.svg){:width="100px"}
+<img alt="Rakuten Books" src="./RakutenBooks/logo.svg" width="200px">
 * **Name** Rakuten Books
 * **URL** https://books.rakuten.co.jp/
 * **Description** Rakuten's media products shop: books, magazines, videogames, DVDs, Blu-ray and software.
@@ -30,7 +30,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Kobo](RakutenKobo)
 
-![Rakuten Kobo](./RakutenKobo/logo.svg){:width="100px"}
+<img alt="Rakuten Kobo" src="./RakutenKobo/logo.svg" width="200px">
 * **Name** Rakuten Kobo
 * **URL** https://books.rakuten.co.jp/
 * **Description** Rakuten's e-book reader and bookstore.
@@ -38,7 +38,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Travel](RakutenTravel)
 
-![Rakuten Travel](./RakutenTravel/logo.svg){:width="100px"}
+<img alt="Rakuten Travel" src="./RakutenTravel/logo.svg" width="200px">
 * **Name** Rakuten Travel
 * **URL** https://travel.rakuten.co.jp/
 * **Description** Rakuten's travel reservation website.
@@ -46,7 +46,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten GORA](RakutenGORA)
 
-![Rakuten GORA](./RakutenGORA/logo.svg){:width="100px"}
+<img alt="Rakuten GORA" src="./RakutenGORA/logo.svg" width="200px">
 * **Name** Rakuten GORA
 * **URL** https://gora.golf.rakuten.co.jp/
 * **Description** Rakuten's online golf reservation site.
@@ -54,7 +54,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Recipe](RakutenRecipe)
 
-![Rakuten Recipe](./RakutenRecipe/logo.svg){:width="100px"}
+<img alt="Rakuten Recipe" src="./RakutenRecipe/logo.svg" width="200px">
 * **Name** Rakuten Recipe
 * **URL** https://recipe.rakuten.co.jp/
 * **Description** Rakuten Recipe is a community for sharing cooking recipes.

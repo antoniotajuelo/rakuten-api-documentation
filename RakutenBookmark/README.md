@@ -1,6 +1,6 @@
 # Rakuten Bookmark
 
-![Rakuten Bookmark](./RakutenBookmark/logo.svg){:width="100px"}
+<img alt="Rakuten Bookmark" src="./RakutenBookmark/logo.svg" width="200px">
 * **Name** Rakuten Bookmark
 * **URL** https://my.bookmark.rakuten.co.jp/
 * **Description** Rakuten's service for customer favorite items lists.

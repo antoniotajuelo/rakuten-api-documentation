@@ -1,6 +1,6 @@
 # Rakuten Travel
 
-![Rakuten Travel](./RakutenTravel/logo.svg){:width="100px"}
+<img alt="Rakuten Travel" src="./RakutenTravel/logo.svg" width="200px">
 * **Name** Rakuten Travel
 * **URL** https://travel.rakuten.co.jp/
 * **Description** Rakuten's travel reservation website.

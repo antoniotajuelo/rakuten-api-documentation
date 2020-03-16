@@ -1,6 +1,6 @@
 # Rakuten Books
 
-![Rakuten Books](./RakutenBooks/logo.svg){:width="100px"}
+<img alt="Rakuten Books" src="./RakutenBooks/logo.svg" width="200px">
 * **Name** Rakuten Books
 * **URL** https://books.rakuten.co.jp/
 * **Description** Rakuten's media products shop: books, magazines, videogames, DVDs, Blu-ray and software.

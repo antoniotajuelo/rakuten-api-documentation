@@ -1,6 +1,6 @@
 # Rakuten GORA
 
-![Rakuten GORA](./RakutenGORA/logo.svg){:width="100px"}
+<img alt="Rakuten GORA" src="./RakutenGORA/logo.svg" width="200px">
 * **Name** Rakuten GORA
 * **URL** https://gora.golf.rakuten.co.jp/
 * **Description** Rakuten's online golf reservation site.
