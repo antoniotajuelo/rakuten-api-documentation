@@ -1,6 +1,6 @@
 # Rakuten Recipe
 
-<img alt="Rakuten Recipe" src="./RakutenRecipe/logo.svg" width="200px">
+<img alt="Rakuten Recipe" src="./RakutenRecipe/logo.svg" width="180px">
 
 * **Name** Rakuten Recipe
 * **URL** https://recipe.rakuten.co.jp/

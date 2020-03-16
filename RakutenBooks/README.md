@@ -1,6 +1,6 @@
 # Rakuten Books
 
-<img alt="Rakuten Books" src="./RakutenBooks/logo.svg" width="200px">
+<img alt="Rakuten Books" src="./RakutenBooks/logo.svg" width="180px">
 
 * **Name** Rakuten Books
 * **URL** https://books.rakuten.co.jp/

@@ -1,6 +1,6 @@
 # Rakuten Ichiba
 
-<img alt="Rakuten Ichiba" src="./RakutenIchiba/logo.svg" width="200px">
+<img alt="Rakuten Ichiba" src="./RakutenIchiba/logo.svg" width="100px">
 
 * **Name** Rakuten Ichiba
 * **URL** https://www.rakuten.co.jp/

@@ -1,6 +1,6 @@
 # Rakuten GORA
 
-<img alt="Rakuten GORA" src="./RakutenGORA/logo.svg" width="200px">
+<img alt="Rakuten GORA" src="./RakutenGORA/logo.svg" width="180px">
 
 * **Name** Rakuten GORA
 * **URL** https://gora.golf.rakuten.co.jp/

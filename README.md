@@ -6,7 +6,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Ichiba](RakutenIchiba)
 
-<img alt="Rakuten Ichiba" src="./RakutenIchiba/logo.svg" width="200px">
+<img alt="Rakuten Ichiba" src="./RakutenIchiba/logo.svg" width="100px">
 
 * **Name** Rakuten Ichiba
 * **URL** https://www.rakuten.co.jp/
@@ -15,7 +15,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Bookmark](RakutenBookmark)
 
-<img alt="Rakuten Bookmark" src="./RakutenBookmark/logo.svg" width="200px">
+<img alt="Rakuten Bookmark" src="./RakutenBookmark/logo.svg" width="100px">
 
 * **Name** Rakuten Bookmark
 * **URL** https://my.bookmark.rakuten.co.jp/
@@ -24,7 +24,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Books](RakutenBooks)
 
-<img alt="Rakuten Books" src="./RakutenBooks/logo.svg" width="200px">
+<img alt="Rakuten Books" src="./RakutenBooks/logo.svg" width="180px">
 
 * **Name** Rakuten Books
 * **URL** https://books.rakuten.co.jp/
@@ -33,7 +33,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Kobo](RakutenKobo)
 
-<img alt="Rakuten Kobo" src="./RakutenKobo/logo.svg" width="200px">
+<img alt="Rakuten Kobo" src="./RakutenKobo/logo.svg" width="180px">
 
 * **Name** Rakuten Kobo
 * **URL** https://books.rakuten.co.jp/
@@ -42,7 +42,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Travel](RakutenTravel)
 
-<img alt="Rakuten Travel" src="./RakutenTravel/logo.svg" width="200px">
+<img alt="Rakuten Travel" src="./RakutenTravel/logo.svg" width="180px">
 
 * **Name** Rakuten Travel
 * **URL** https://travel.rakuten.co.jp/
@@ -51,7 +51,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten GORA](RakutenGORA)
 
-<img alt="Rakuten GORA" src="./RakutenGORA/logo.svg" width="200px">
+<img alt="Rakuten GORA" src="./RakutenGORA/logo.svg" width="180px">
 
 * **Name** Rakuten GORA
 * **URL** https://gora.golf.rakuten.co.jp/
@@ -60,7 +60,7 @@ Please check original for extra features: https://rakuten-api-documentation.anto
 
 ### [Rakuten Recipe](RakutenRecipe)
 
-<img alt="Rakuten Recipe" src="./RakutenRecipe/logo.svg" width="200px">
+<img alt="Rakuten Recipe" src="./RakutenRecipe/logo.svg" width="180px">
 
 * **Name** Rakuten Recipe
 * **URL** https://recipe.rakuten.co.jp/

@@ -1,6 +1,6 @@
 # Rakuten Bookmark
 
-<img alt="Rakuten Bookmark" src="./RakutenBookmark/logo.svg" width="200px">
+<img alt="Rakuten Bookmark" src="./RakutenBookmark/logo.svg" width="100px">
 
 * **Name** Rakuten Bookmark
 * **URL** https://my.bookmark.rakuten.co.jp/

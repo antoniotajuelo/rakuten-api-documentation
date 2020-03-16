@@ -1,6 +1,6 @@
 # Rakuten Kobo
 
-<img alt="Rakuten Kobo" src="./RakutenKobo/logo.svg" width="200px">
+<img alt="Rakuten Kobo" src="./RakutenKobo/logo.svg" width="180px">
 
 * **Name** Rakuten Kobo
 * **URL** https://books.rakuten.co.jp/
