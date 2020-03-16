@@ -1,6 +1,6 @@
 # Rakuten Kobo
 
-![Rakuten Kobo](./RakutenKobo/logo.svg {:width="100px")
+![Rakuten Kobo](./RakutenKobo/logo.svg {:width="100px"})
 * **Name** Rakuten Kobo
 * **URL** https://books.rakuten.co.jp/
 * **Description** Rakuten's e-book reader and bookstore.
