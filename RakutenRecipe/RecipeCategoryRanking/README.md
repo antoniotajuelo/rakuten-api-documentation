@@ -3,7 +3,7 @@
 
 ## Description
 
-Gets the top 4 ranked recipes.
+Gets the ranking of top recipes by category.
 ## Resource URL
 
 https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426
@@ -17,119 +17,160 @@ https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426
 Name | Type | Required | Description
  --- | --- | --- | --- 
 applicationId<br>*App ID* | string | Required | The Application ID that identifies your application. You can get it from <a href="https://webservice.rakuten.co.jp/" target="_blank">https://webservice.rakuten.co.jp/</a>.
-categoryType<br>*Category Type* | string | Optional | Category type.<br>("all" is used when not specified)<br>**Valid Values:**<br><code>large</code> <br><code>medium</code> <br><code>small</code> <br>**Default Value:** <code>all</code>
-format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>. JSON is usually the best option.<br>If you choose JSON, you can also set the <code>callback</code> parameter in order to use JSONP.<br>**Valid Values:**<br><code>json</code> <br><code>xml</code> <br>**Default Value:** <code>json</code>
+categoryId<br>*Category Id* | string | Optional | Overall ranking if omitted<br>If you specify<br>Example:<br>categoryId = 10 (major category)<br>categoryId = 10-276 (medium category)<br>categoryId = 10-276-824 (small category)<br>* Only the middle and small categories should be connected with hyphens.
+format<br>*Response format* | string | Optional | Format for the response output.<br>You can set this parameter to <code>json</code> or <code>xml</code>.<br>If you choose <code>json</code>, you can also set the <code>callback</code> parameter in order to use <code>jsonp</code>.<br>**Valid Values:**<br><code>json</code> <br><code>xml</code> <br>**Default Value:** <code>json</code>
 callback<br>*Callback function name* | string | Optional | Function name to be used with the JSONP output<br>Please make sure you enter a UTF-8 URL encoded string, containing only a combination of alphanumeric characters, periods and underscores.
 elements<br>*Choosing output fields* | string | Optional | By default API will return all the fields. You can specify what fields should be returned by using this parameter.<br>If you want to specify more than one parameter, please use comma (<code>,</code>) as separator.<br>For example, following request will only return <code>itemName</code>, <code>itemPrice</code> and <code>itemUrl</code>.<br><code>elements=itemName,itemPrice,itemUrl</code>
-formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {"item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    }},<br>    {"item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }}<br>]}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{"items": [<br>    {<br>        "itemName": "a",<br>        "itemPrice": 10<br>    },<br>    {<br>        "itemName": "b",<br>        "itemPrice": 20<br>    }<br>]}</pre><br>**Valid Values:**<br><code>1</code> <br><code>2</code> <br>**Default Value:** <code>1</code>
+formatVersion<br>*Format version* | integer | Optional | Response format version.<br>If <code>formatVersion=2</code> is set, the response format (JSON) will be improved.<br>In case of <code>formatVersion=1</code>:<br>The API response will return an array using the following format.<br>For example, you would need to use notation <code>items[0].item.itemName</code> to access <code>itemName</code> parameter.<br><pre class="prettyprint">{<br>  "items": [<br>    {<br>      "item": {<br>        "itemName": "a",<br>        "itemPrice": 10<br>      }<br>    },<br>    {<br>      "item": {<br>        "itemName": "b",<br>        "itemPrice": 20<br>      }<br>    }<br>  ]<br>}</pre><br>In case of <code>formatVersion=2</code>:<br>The API response will return an array using the following format.<br>For example, you would use the notation <code>items[0].itemName</code> to access the <code>itemName</code> parameter.<br><pre class="prettyprint">{<br>  "items": [<br>    {<br>      "itemName": "a",<br>      "itemPrice": 10<br>    },<br>    {<br>      "itemName": "b",<br>      "itemPrice": 20<br>    }<br>  ]<br>}</pre><br>**Valid Values:**<br><code>1</code> <br><code>2</code> <br>**Default Value:** <code>1</code>
 ## Response Example
 
 ### Request
 
-https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=REPLACE_WITH_YOUR_APP_ID
+https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=REPLACE_WITH_YOUR_APP_ID&categoryId=10
 ### Response
 
 ```json
 {
   "result": [
     {
-      "recipeId": 1050000502,
-      "recipeTitle": "今まで食べた大根の漬物の中で一番美味しい大根の漬物",
-      "recipeUrl": "http://recipe.rakuten.co.jp/recipe/1050000502/",
-      "foodImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/bc0564cd6b10ee11fa5e96f5091e709b42a3aa1b.94.1.3.2.jpg",
-      "mediumImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/bc0564cd6b10ee11fa5e96f5091e709b42a3aa1b.94.1.3.2.jpg?thum=54",
-      "smallImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/bc0564cd6b10ee11fa5e96f5091e709b42a3aa1b.94.1.3.2.jpg?thum=55",
+      "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/fbd7dd260d736654532e6c0b1ec185a0cede8675.49.2.3.2.jpg",
+      "recipeDescription": "そのままでも、ご飯にのせて丼にしても♪",
+      "recipePublishday": "2017/10/10 22:37:34",
+      "shop": 0,
       "pickup": 0,
-      "shop": 0,
-      "nickname": "ｙｂｋｍｋ★",
-      "recipeDescription": "簡単ですがとっても美味しいんです！！\n\n刻んでおにぎりの具材にしても◎",
+      "recipeId": 1760028309,
+      "nickname": "はぁぽじ",
+      "smallImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/fbd7dd260d736654532e6c0b1ec185a0cede8675.49.2.3.2.jpg?thum=55",
       "recipeMaterial": [
-        "大根",
-        "★砂糖",
-        "★しょうゆ",
-        "★酢",
-        "★昆布"
+        "鶏むね肉",
+        "塩",
+        "酒",
+        "片栗粉",
+        "○水",
+        "○塩",
+        "○鶏がらスープの素",
+        "○黒胡椒",
+        "長ネギ",
+        "いりごま",
+        "ごま油"
       ],
-      "recipeIndication": "約30分",
+      "recipeIndication": "約10分",
       "recipeCost": "300円前後",
-      "recipePublishday": "2010/12/20 23:32:19",
-      "rank": "1"
+      "rank": "1",
+      "recipeUrl": "https://recipe.rakuten.co.jp/recipe/1760028309/",
+      "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/fbd7dd260d736654532e6c0b1ec185a0cede8675.49.2.3.2.jpg?thum=54",
+      "recipeTitle": "ご飯がすすむ！鶏むね肉のねぎ塩焼き"
     },
     {
-      "recipeId": 1140021340,
-      "recipeTitle": "つなぎはマヨで簡単！　蓮根はさみ照り焼き",
-      "recipeUrl": "http://recipe.rakuten.co.jp/recipe/1140021340/",
-      "foodImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/a6a50d94d735f9dad01c9233008fb6bd587a8642.65.2.3.2.jpg",
-      "mediumImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/a6a50d94d735f9dad01c9233008fb6bd587a8642.65.2.3.2.jpg?thum=54",
-      "smallImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/a6a50d94d735f9dad01c9233008fb6bd587a8642.65.2.3.2.jpg?thum=55",
-      "pickup": 1,
+      "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/aedd5fa798b463b0371dceb8e3d0f529e4dc1b48.79.2.3.2.jpg",
+      "recipeDescription": "好評の為レシピを分かりやすくしました。
+分量を多少変更しました。（２０１３年３月）
+以前載せていたポテサラパケットは
+レシピID: 1590004701です。",
+      "recipePublishday": "2012/01/27 21:13:53",
       "shop": 0,
-      "nickname": "Slice of Coffee",
-      "recipeDescription": "一人前100円以下の　胸肉、ささ身を使った蓮根はさみ照り焼きです。\nつなぎはマヨネーズなので簡単に作れます。",
+      "pickup": 0,
+      "recipeId": 1590002716,
+      "nickname": "く〜-Qoo-",
+      "smallImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/aedd5fa798b463b0371dceb8e3d0f529e4dc1b48.79.2.3.2.jpg?thum=55",
       "recipeMaterial": [
-        "ささ身　3本　or　胸肉(ミンチ)",
-        "細ねぎ",
-        "蓮根　太め",
-        "塩、胡椒",
-        "マヨネーズ",
-        "小麦粉",
-        "☆醤油",
-        "☆みりん",
-        "☆酒"
-      ],
-      "recipeIndication": "約15分",
-      "recipeCost": "100円以下",
-      "recipePublishday": "2014/12/22 15:21:51",
-      "rank": "2"
-    },
-    {
-      "recipeId": 1510010130,
-      "recipeTitle": "HMとハチミツで簡単おいしい！炊飯器ケーキ",
-      "recipeUrl": "http://recipe.rakuten.co.jp/recipe/1510010130/",
-      "foodImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/f8bc74536866846c7cbfae5d9a25c500a9b12cd4.43.2.3.2.jpg",
-      "mediumImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/f8bc74536866846c7cbfae5d9a25c500a9b12cd4.43.2.3.2.jpg?thum=54",
-      "smallImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/f8bc74536866846c7cbfae5d9a25c500a9b12cd4.43.2.3.2.jpg?thum=55",
-      "pickup": 1,
-      "shop": 0,
-      "nickname": "hapihapi.jp",
-      "recipeDescription": "ホットケーキミックスとハチミツでしっとりおいしいケーキか簡単に作れます。\n火加減は炊飯器にオマカセです。",
-      "recipeMaterial": [
-        "ホットケーキミックス",
-        "ハチミツ",
+        "【ハンバーグ材料】",
+        "牛豚合びき肉",
+        "豚ひき肉",
+        "玉ねぎ",
+        "パン粉",
         "卵",
         "塩",
-        "牛乳"
+        "胡椒",
+        "マヨネーズ",
+        "合わせ味噌",
+        "ナツメグ",
+        "コーヒーフレッシュ",
+        "【ハンバーグソース材料】",
+        "玉ねぎ",
+        "みかんやオレンジの果汁",
+        "水",
+        "醤油",
+        "料理酒",
+        "みりん",
+        "【サラダ】",
+        "大根",
+        "人参",
+        "レタスか白菜",
+        "サウザンドレッシング（ダイムドレ代用）",
+        "醤油マヨ",
+        "炒りごま",
+        "ミニトマト"
       ],
-      "recipeIndication": "指定なし",
-      "recipeCost": "指定なし",
-      "recipePublishday": "2014/05/12 17:00:45",
-      "rank": "3"
+      "recipeIndication": "約1時間",
+      "recipeCost": "500円前後",
+      "rank": "2",
+      "recipeUrl": "https://recipe.rakuten.co.jp/recipe/1590002716/",
+      "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/aedd5fa798b463b0371dceb8e3d0f529e4dc1b48.79.2.3.2.jpg?thum=54",
+      "recipeTitle": "元店長がこっそり教えるびっくり◯ンキーのハンバーグ"
     },
     {
-      "recipeId": 1960000322,
-      "recipeTitle": "簡単！激旨！合わせて置くだけの大根漬物",
-      "recipeUrl": "http://recipe.rakuten.co.jp/recipe/1960000322/",
-      "foodImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/2063225afffe7c73bb1662a0220efe1a4ddacf15.48.2.3.2.jpg",
-      "mediumImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/2063225afffe7c73bb1662a0220efe1a4ddacf15.48.2.3.2.jpg?thum=54",
-      "smallImageUrl": "http://image.space.rakuten.co.jp/d/strg/ctrl/3/2063225afffe7c73bb1662a0220efe1a4ddacf15.48.2.3.2.jpg?thum=55",
-      "pickup": 1,
+      "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/60a06d1b3f8929c4803550066cf33ae601f68b6c.66.2.3.2.jpg",
+      "recipeDescription": "節約主婦には欠かせない
+鶏のムネ肉!!
+ 
+でもレパートリーがないし…
+お腹が膨れないのは嫌だし…
+時間がかかるのは面倒だし…
+ 
+って事で簡単に美味しく!!",
+      "recipePublishday": "2013/02/25 17:07:59",
       "shop": 0,
-      "nickname": "POPOTANKOBU",
-      "recipeDescription": "他の料理サイトで1000件レポを頂いている自慢のお漬物です\n大根・人参‥パクパクと手が止まりません！\n食べた人が「美味しい～！」と、必ずレシピを聞いてくれます★",
+      "pickup": 1,
+      "recipeId": 1100006344,
+      "nickname": "かえMAMA",
+      "smallImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/60a06d1b3f8929c4803550066cf33ae601f68b6c.66.2.3.2.jpg?thum=55",
+      "recipeMaterial": [
+        "鶏胸肉",
+        "小麦粉",
+        "卵",
+        "▼甘酢▼",
+        "砂糖",
+        "酢",
+        "醤油",
+        "▼タルタルソース▼",
+        "卵",
+        "玉ねぎ",
+        "マヨネーズ",
+        "牛乳",
+        "パセリ"
+      ],
+      "recipeIndication": "指定なし",
+      "recipeCost": "300円前後",
+      "rank": "3",
+      "recipeUrl": "https://recipe.rakuten.co.jp/recipe/1100006344/",
+      "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/60a06d1b3f8929c4803550066cf33ae601f68b6c.66.2.3.2.jpg?thum=54",
+      "recipeTitle": "ムネ肉で‼簡単チキン南蛮♡"
+    },
+    {
+      "foodImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/1a2766488ee9cee89e4a74365e80dc06f3581539.40.2.3.2.jpg",
+      "recipeDescription": "豚バラと大根で色々とお好みの食感が楽しめます♡簡単ですがご飯のすすむ甘辛味でボリュームもありますので節約にも是非どうぞ♬",
+      "recipePublishday": "2016/02/23 01:38:30",
+      "shop": 0,
+      "pickup": 1,
+      "recipeId": 1400015997,
+      "nickname": "*ももら*",
+      "smallImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/1a2766488ee9cee89e4a74365e80dc06f3581539.40.2.3.2.jpg?thum=55",
       "recipeMaterial": [
         "大根",
-        "◆酢",
-        "◆塩",
-        "◆砂糖",
-        "*砂糖はお好みで調節して下さい♪",
-        "◆酒",
-        "お好みで（漬物昆布・ゆず皮・鷹の爪）",
-        "一緒に人参・胡瓜・セロリ等漬けてもOK"
+        "豚バラ肉",
+        "ゴマ油",
+        "A醤油・みりん・砂糖",
+        "Aみそ",
+        "Aショウガ",
+        "A顆粒だし"
       ],
-      "recipeIndication": "5分以内",
+      "recipeIndication": "約15分",
       "recipeCost": "300円前後",
-      "recipePublishday": "2010/12/31 01:10:38",
-      "rank": "4"
+      "rank": "4",
+      "recipeUrl": "https://recipe.rakuten.co.jp/recipe/1400015997/",
+      "mediumImageUrl": "https://image.space.rakuten.co.jp/d/strg/ctrl/3/1a2766488ee9cee89e4a74365e80dc06f3581539.40.2.3.2.jpg?thum=54",
+      "recipeTitle": "簡単・節約♡テリテリ甘辛みその豚バラ大根"
     }
   ]
 }

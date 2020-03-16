@@ -1,6 +1,6 @@
 # Rakuten Travel
 
-![Rakuten Travel](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-travel-logo.png)
+![Rakuten Travel](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-travel-logo.svg | width=100)
 * **Name** Rakuten Travel
 * **URL** https://travel.rakuten.co.jp/
 * **Description** Rakuten's travel reservation website.
@@ -12,7 +12,7 @@ Gets up to 30 hotels by area class code, hotel number or coordinates.
 * **Auth Type** App Key
 * **Affiliation Support** Yes
 
-## [Travel/HotelDetailSeach](TravelHotelDetailSeach)
+## [Travel/HotelDetailSearch](TravelHotelDetailSearch)
 Gets a hotel details by hotel number.
 * **Auth Type** App Key
 * **Affiliation Support** Yes

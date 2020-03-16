@@ -1,6 +1,6 @@
 # Rakuten Bookmark
 
-![Rakuten Bookmark](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-logo.png)
+![Rakuten Bookmark](https://rakuten-api-documentation.antoniotajuelo.com/media/service/logo/rakuten-logo.svg | width=100)
 * **Name** Rakuten Bookmark
 * **URL** https://my.bookmark.rakuten.co.jp/
 * **Description** Rakuten's service for customer favorite items lists.
