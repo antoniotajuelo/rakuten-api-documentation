@@ -1,6 +1,7 @@
 # Rakuten Recipe
 
 <img alt="Rakuten Recipe" src="./RakutenRecipe/logo.svg" width="200px">
+
 * **Name** Rakuten Recipe
 * **URL** https://recipe.rakuten.co.jp/
 * **Description** Rakuten Recipe is a community for sharing cooking recipes.
